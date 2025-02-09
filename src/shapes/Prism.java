@@ -15,16 +15,16 @@ public abstract class Prism extends Shape{
 		return this.side;
 	}
 	
-	protected Prism(PrismBuilder builder) {
+	protected Prism(PrismBuilder<?> builder) {
 		super(builder);
 		this.side = builder.side;
 	}
 
 	
-	public abstract class PrismBuilder extends Shape.Builder<PrismBuilder> {
+	public static abstract class PrismBuilder<T extends PrismBuilder<T>> extends Shape.Builder<T> {
 		public double side;
 		
-		public PrismBuilder setSide(double side) {
+		public T setSide(double side) {
 			this.side = side;
 			return self();
 		}

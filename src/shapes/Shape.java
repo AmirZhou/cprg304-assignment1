@@ -8,7 +8,7 @@ package shapes;
  * @version 0.1 
  * 
  */
-public abstract class Shape {
+public abstract class Shape implements Comparable<Shape>{
 	
 	private final double height;
 	public double getHeight() {
@@ -19,6 +19,11 @@ public abstract class Shape {
 		this.height = builder.height;
 	}
 	
+	
+	/**
+	 * 
+	 * @param <T> T is the subclass's type, so that the self() method returns correct type: the subclasses' builder.
+	 */
 	public abstract static class Builder<T extends Builder<T>> {
 		public double height;
 		
@@ -40,6 +45,10 @@ public abstract class Shape {
 	public abstract double calcVolumn();
 	public abstract double calcBaseArea();
 	
+	@Override
+	public int compareTo(Shape shape) {
+		return Double.compare(this.getHeight(), shape.getHeight());
+	}
 	
 	
 	@Override
