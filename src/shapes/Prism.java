@@ -8,6 +8,29 @@ package shapes;
  * @author Yue (Amir) Zhou
  * @version 0.1
  */
-public class Prism extends Shape{
+public abstract class Prism extends Shape{
+	
+	private final double side;
+	public double getSide() {
+		return this.side;
+	}
+	
+	protected Prism(PrismBuilder builder) {
+		super(builder);
+		this.side = builder.side;
+	}
+
+	
+	public abstract class PrismBuilder extends Shape.Builder<PrismBuilder> {
+		public double side;
+		
+		public PrismBuilder setSide(double side) {
+			this.side = side;
+			return self();
+		}
+		
+		public abstract Prism build();
+		
+	}
 	
 }
