@@ -6,7 +6,7 @@ public class TriangularPrism extends Prism {
 		super(builder);
 	}
 	
-	public class TriangularPrismBuilder extends Prism.PrismBuilder<TriangularPrismBuilder> {
+	public static class TriangularPrismBuilder extends Prism.PrismBuilder<TriangularPrismBuilder> {
 		
 		@Override
 		public TriangularPrism build() {
@@ -26,6 +26,6 @@ public class TriangularPrism extends Prism {
 	
 	@Override
 	public String toString() {
-		return "TriangularPrism" + this.getHeight() + " Side: " + this.getHeight();
+		return "\u001B[32m" + "TriangularPrism: " + "\u001b[0m" ;
 	}
 }

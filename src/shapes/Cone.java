@@ -38,6 +38,6 @@ public class Cone extends Shape {
 	
 	@Override
 	public String toString() {
-		return "Cone: Radius" + this.getRadius() + "Height: " + this.getHeight();
+		return "\u001B[32m" + "Cone: " + "\u001b[0m" ;
 	}
 }

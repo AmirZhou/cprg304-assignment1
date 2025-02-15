@@ -26,7 +26,7 @@ public class SquarePrism extends Prism {
 	
 	@Override
 	public String toString() {
-		return "SquarePrism: Height: " + this.getHeight() + " Side: " + this.getSide();
+		return "\u001B[32m" + "SquarePrism: " + "\u001b[0m" ;
 	}
 	
 }

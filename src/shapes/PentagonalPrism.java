@@ -25,6 +25,6 @@ public class PentagonalPrism extends Prism {
 	
 	@Override
 	public String toString() {
-		return "PentagonalPrism: Height: " + this.getHeight() + " Side" + this.getSide();
+		return "\u001B[32m" + "PentagonalPrism: " + "\u001b[0m" ;
 	}
 }

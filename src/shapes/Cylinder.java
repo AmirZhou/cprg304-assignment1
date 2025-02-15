@@ -37,6 +37,6 @@ public class Cylinder extends Shape {
 	
 	@Override
 	public String toString() {
-		return "Cylinder: Radius " + this.getRaius() + " Height: " + this.getHeight();
+		return "\u001B[32m" + "Cylinder: " + "\u001b[0m" ;
 	}
 }

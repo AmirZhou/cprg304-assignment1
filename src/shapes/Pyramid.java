@@ -38,7 +38,7 @@ public class Pyramid extends Shape {
 	
 	@Override
 	public String toString() {
-		return "Pyramid: height: " + this.getHeight() + "side: " + this.getSide();
+		return "\u001B[32m" + "Pyramid: " + "\u001b[0m" ;
 	}
 
 }

@@ -24,4 +24,8 @@ public class OctagonalPrism extends Prism {
 		return this.calcBaseArea() * this.getHeight();
 	}
 	
+	@Override
+	public String toString() {
+		return "\u001B[32m" + "OctagonalPrism: " + "\u001b[0m" ;
+	}
 }

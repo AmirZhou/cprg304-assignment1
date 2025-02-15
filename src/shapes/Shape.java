@@ -28,7 +28,7 @@ public abstract class Shape implements Comparable<Shape>{
 		public double height;
 		
 		public T setHeight(double height) {
-			
+			this.height = height;
 			return self();
 		}
 		

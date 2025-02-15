@@ -9,7 +9,8 @@ import java.util.Comparator;
  * @version 0.1
  * @since 2025 
  */
-public interface Sorter<T> {
+public interface SortingStrategy<T> {
 	
 	public abstract T[] sort(T[] arr, Comparator<? super T> comparator);
 }
+
