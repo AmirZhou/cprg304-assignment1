@@ -134,6 +134,7 @@ public class App {
 					this.sorter = new InsertionSortStrategy<Shape>();
 					break;
 				case "m":
+					this.sorter = new MergeSortStrategy<Shape>();
 					break;
 				case "q":
 					this.sorter = new QuickSortStrategy<Shape>();
